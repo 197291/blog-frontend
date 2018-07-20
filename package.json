@@ -1,0 +1,57 @@
+{
+  "name": "test_front",
+  "jest": {
+    "verbose": true,
+    "timers": "fake"
+  },
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^23.0.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^23.0.1",
+    "jest-aphrodite-react": "^2.1.0",
+    "jest-cli": "^23.0.1",
+    "react-scripts": "1.0.14",
+    "react-test-renderer": "^16.4.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-regular-svg-icons": "^5.1.0-11",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
+    "aphrodite": "^2.2.0",
+    "axios": "^0.17.0",
+    "history": "^4.7.2",
+    "i": "^0.3.6",
+    "moment": "^2.22.2",
+    "node-sass-chokidar": "0.0.3",
+    "npm": "^6.1.0",
+    "npm-run-all": "^4.1.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.4.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-validators": "^0.1.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "NODE_PATH=./src npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  }
+}
